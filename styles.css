@@ -682,6 +682,10 @@ select {
   height: 11rem;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -692,10 +696,6 @@ select {
 
 .h-8 {
   height: 2rem;
-}
-
-.h-1 {
-  height: 0.25rem;
 }
 
 .min-h-screen {
@@ -754,8 +754,9 @@ select {
   border-radius: 9999px;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
+.bg-\[\#D0E9EC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(208 233 236 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
@@ -773,34 +774,24 @@ select {
   background-color: rgb(40 0 173 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
+.bg-\[\#d0ecef\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(208 236 239 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#1F2937\] {
+.bg-\[\#cfe3e5\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(207 227 229 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#D2EAED\] {
+.bg-\[\#ccdfe1\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(210 234 237 / var(--tw-bg-opacity));
+  background-color: rgb(204 223 225 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#a9dae1\] {
+.bg-\[\#c6d9dc\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(169 218 225 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#b0d9df\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(176 217 223 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#b5dadf\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(181 218 223 / var(--tw-bg-opacity));
+  background-color: rgb(198 217 220 / var(--tw-bg-opacity));
 }
 
 .bg-contain {
@@ -843,16 +834,16 @@ select {
   padding-top: 1rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-3\.5 {
   padding-top: 0.875rem;
 }
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .pt-12 {
@@ -886,32 +877,28 @@ select {
   line-height: 2.5rem;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
 .font-bold {
   font-weight: 700;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .font-medium {
   font-weight: 500;
 }
 
-.leading-tight {
-  line-height: 1.25;
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .text-gray-800 {
@@ -919,19 +906,14 @@ select {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.text-blue-500 {
+.text-\[\#2B7BBC\] {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(43 123 188 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#2B7BBC\] {
-  --tw-text-opacity: 1;
-  color: rgb(43 123 188 / var(--tw-text-opacity));
 }
 
 .underline {
