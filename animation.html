@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animation</title>
+</head>
+
+
+<body class="flex items-center min-h-screen text-4xl text-white bg-[#00050a]">
+    <h1 class="relative font-bold overflow-hidden pl-20">
+        <span class="box absolute bg-[#2800ad] h-1 bottom-0"></span>
+        <span class="hi inline-block">Hi, I'm</span>
+        <span class="text font-normal"></span>
+        <span class="cursor">_</span>
+    </h1>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EasePack.min.js"></script> -->
+<script>
+    // blinking
+    let cursor = gsap.to('.cursor', {opacity:0, ease: "power2.inOut", repeat:-1})
+    
+    // box-animation
+    let boxTl = gsap.timeline()
+    boxTl.to('.box', {duration:1, width:"116px", delay: 0.5, ease: "power4.inOut"})
+    .from('.hi', {duration:1, y:"7vw", ease: "power3.out"})
+    .to('.box', {duration:1.5, height:"7vw", ease:"elastic.out", onComplete:() => masterTl.play()})
+    
+    // typewriter effect
+    const words = ["Mohd Ammar 👋","A Freelancer.","A Self Learner.","A Coding Enthusiast.","A Developer","Insatiable Curious about Tech."]
+    let masterTl = gsap.timeline({repeat: -1}).pause();
+    words.forEach(word => {
+        let tl = gsap.timeline({repeat: 1, yoyo:true, repeatDelay: 1.5})
+        tl.to('.text', {duration: 1, text: word})
+        masterTl.add(tl)
+    });
+
+    
+
+</script>
+
+</html>

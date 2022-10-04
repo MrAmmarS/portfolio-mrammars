@@ -1,7 +1,7 @@
 module.exports = {
     mode: "jit",
-    purge: ["index.html"],
-    darkMode: false,
+    purge: ["index.html","animation.html" ],
+    darkMode: true,
     theme: {
         extend: {
             fontFamily:{
