@@ -1,6 +1,6 @@
 module.exports = {
     mode: "jit",
-    purge: ["index.html","animation.html","portfolio.html"],
+    purge: ["index.html","index_copy.html","animation.html","portfolio.html","hero.html","404.html"],
     darkMode: true,
     theme: {
         extend: {
