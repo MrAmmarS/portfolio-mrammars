@@ -72,6 +72,10 @@
   .social-icon.github:after {
     background-color: #24292e;
   }
+
+  .social-icon.linkedin:after {
+    background-color: #0071AE;
+  }
   
   .social-icon.instagram:after {
     background-image: linear-gradient(
